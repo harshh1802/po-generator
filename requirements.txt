@@ -1,0 +1,5 @@
+webbrowser
+jinja2
+pandas
+path
+streamlit
