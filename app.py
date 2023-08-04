@@ -26,7 +26,7 @@ df = st.experimental_data_editor({'sr':[1],'part':["ADS123"],'desc':["ADS123"],'
 
 if st.button('Generate'):
 
-    with open("D:\Enychip Electronics\PO Generator\PO _template.html","r") as f:
+    with open("./PO _template.html","r") as f:
         temp_str = f.read()
         template = Template(temp_str)
 
