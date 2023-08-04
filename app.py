@@ -26,7 +26,7 @@ df = st.experimental_data_editor({'sr':[1],'part':["ADS123"],'desc':["ADS123"],'
 
 if st.button('Generate'):
 
-    with open("./pages/PO _template.html","r") as f:
+    with open("./PO_template.html","r") as f:
         temp_str = f.read()
         template = Template(temp_str)
 
@@ -51,7 +51,7 @@ if st.button('Generate'):
             total = total
         )
 
-        with open(f'{po_number}.html', 'w') as f:
+        with open(f'./pages/{po_number}.html', 'w') as f:
             f.write(po_html)
 
         file_url = f"./pages/{po_number}.html"
