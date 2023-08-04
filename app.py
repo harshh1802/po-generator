@@ -26,7 +26,7 @@ df = st.experimental_data_editor({'sr':[1],'part':["ADS123"],'desc':["ADS123"],'
 
 if st.button('Generate'):
 
-    with open("./PO _template.html","r") as f:
+    with open("./pages/PO _template.html","r") as f:
         temp_str = f.read()
         template = Template(temp_str)
 
@@ -54,7 +54,7 @@ if st.button('Generate'):
         with open(f'{po_number}.html', 'w') as f:
             f.write(po_html)
 
-        file_url = f"{po_number}.html"
+        file_url = f"./pages/{po_number}.html"
 
         st.markdown(f'<a href="{file_url}" target="_blank">Open HTML in New Tab</a>', unsafe_allow_html=True)
 
